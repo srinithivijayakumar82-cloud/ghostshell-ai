@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="GhostShell — a spooky terminal companion for curious developers.">
+  <title>GhostShell — The Terminal That Talks Back</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="GhostShell home">
+      <span class="brand-icon">◉</span>
+      <span>GHOST<span class="brand-accent">SHELL</span></span>
+    </a>
+    <div class="topbar-right"><span class="status-dot"></span><span class="topbar-text">INTERACTIVE PROTOTYPE</span></div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE HAUNTING. A LOT OF LEARNING.</div>
+      <h1>The terminal<br>that <span>talks back.</span></h1>
+      <p class="hero-copy">Meet your ghostly coding companion. Explore commands, summon a spooky story, and learn what lurks beneath the command line.</p>
+      <div class="hero-meta"><span>✦ BUILT FOR THE CURIOUS</span><span>✦ HALLOWEEN EDITION</span></div>
+    </section>
+
+    <section class="workspace" aria-label="GhostShell demo">
+      <aside class="sidebar">
+        <div class="sidebar-label">YOUR TOOLKIT</div>
+        <button class="mode-button active" data-mode="explain"><span class="mode-icon">⌘</span><span><strong>Command Oracle</strong><small>Understand a command</small></span><span class="mode-arrow">↗</span></button>
+        <button class="mode-button" data-mode="code"><span class="mode-icon">⌁</span><span><strong>Code Séance</strong><small>Ask about a code snippet</small></span><span class="mode-arrow">↗</span></button>
+        <button class="mode-button" data-mode="story"><span class="mode-icon">☾</span><span><strong>Haunted Story</strong><small>Summon a tiny tale</small></span><span class="mode-arrow">↗</span></button>
+        <div class="sidebar-note"><span class="note-star">✳</span><div><strong>Ghost tip</strong><p>Never run a command you don't understand. Some spells are irreversible.</p></div></div>
+        <div class="demo-label"><span class="status-dot"></span> INTERACTIVE PROTOTYPE</div>
+      </aside>
+
+      <section class="terminal-panel">
+        <div class="terminal-titlebar">
+          <div class="window-controls"><i></i><i></i><i></i></div>
+          <span class="terminal-title">ghostshell — séance_001</span>
+          <span class="terminal-lock">◇ SAFE DEMO</span>
+        </div>
+        <div class="terminal-body">
+          <div class="welcome-line"><span class="prompt-symbol">✦</span><div><strong>Something stirred in the machine...</strong><p>I'm your friendly terminal ghost. What shall we uncover?</p></div></div>
+          <div class="mode-heading"><span id="mode-kicker">COMMAND ORACLE</span><span class="mode-tag">NO REAL COMMANDS RUN</span></div>
+          <label id="input-label" for="user-input">Enter a command to investigate</label>
+          <div class="input-wrap"><span class="input-prompt">you&nbsp;›</span><input id="user-input" autocomplete="off" spellcheck="false" placeholder="e.g. git status"><button id="summon-btn">Summon <span>↗</span></button></div>
+          <div class="suggestions" id="suggestions">
+            <button data-value="git status">git status</button>
+            <button data-value="pwd">pwd</button>
+            <button data-value="rm -rf /">rm -rf /</button>
+          </div>
+          <div class="response-head"><span class="response-icon">☻</span><div><strong>The Ghost</strong><small id="response-subtitle">Waiting beyond the prompt</small></div><span class="response-state" id="response-state">DORMANT</span></div>
+          <div class="response-box" id="response-box" aria-live="polite"><div class="empty-ghost">☁</div><p class="empty-title">The veil is quiet.</p><p class="empty-copy">Type something above or choose a suggestion to wake the ghost.</p></div>
+          <div class="terminal-footer"><span><span class="status-dot"></span> SIMULATED RESPONSES</span><span>YOUR MACHINE IS SAFE</span></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="bottom-strip">
+      <div><span class="strip-icon">✧</span><span><strong>Learn without fear</strong><small>Understand commands before you use them.</small></span></div>
+      <div><span class="strip-icon">✧</span><span><strong>Explore the unknown</strong><small>Ask about code snippets and their purpose.</small></span></div>
+      <div><span class="strip-icon">✧</span><span><strong>Summon a story</strong><small>Discover a tiny tale from the terminal ghost.</small></
+    </section>
+    <footer><span>GHOSTSHELL <span class="footer-muted">· A HACKTOBERFEST WEEK 4 EXPERIMENT</span></span><span>Made for the curious, not the cursed. ✦</span></footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
